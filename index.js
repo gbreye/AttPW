@@ -6,7 +6,11 @@ const products = [
     ['Smartphone S26', 'Smartphone GALAXY S26 ULTRA', 'smartphone', '1000,00'],
     ['Smartphone S25', 'Smartphone GALAXY S25 ULTRA', 'smartphone', '900,00'],
     ['Thinkpad X1', 'Thinkpad X1 Carbon Gen 9', 'notebook', '2000,00'],
-    ['Laptop MacBook Pro', 'Laptop MacBook Pro M3', 'notebook', '3000,00']
+    ['Laptop MacBook Pro', 'Laptop MacBook Pro M3', 'notebook', '3000,00'],
+    ['Smartwatch S26', 'Smartwatch GALAXY S26 ULTRA', 'smartwatch', '500,00'],
+    ['Tablet S10', 'Tablet GALAXY S10 ULTRA', 'tablet', '800,00'],
+    ['Tablet S9', 'Tablet GALAXY S9 ULTRA', 'tablet', '700,00'],
+    ['TV', 'TV 55"', 'tv', '1500,00'],
 ]
 
 function renderCard(filter) {
