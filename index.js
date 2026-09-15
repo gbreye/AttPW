@@ -43,7 +43,7 @@ function renderCard(filter) {
 
 renderCard(products);
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('input', (event) => {
   event.preventDefault();
   const typho = document.getElementById('search').value.toLowerCase();
   const filter = products.filter(products => {
