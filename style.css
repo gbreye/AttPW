@@ -1,5 +1,6 @@
     * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        font-family: 'Bricolage Grotesque', sans-serif;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -7,20 +8,32 @@
     body {
         width: 100vw;
         height: 100vh;
+        overflow: hidden;
     }
     #main {
         display: flex;
         gap: 10px;
         overflow-x: auto;
         padding: 20px;
-
+        width: 100vw;
+        height: auto;
+        flex-wrap: nowrap;
     }
-    #main div {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: rgb(225, 225, 225);
         padding: 30px;
-        width: 200px;
-        height: 300px;
+        width: 300px;
         transition: 0.5s ease;
+        border-radius: 10px;
+    }
+
+    #main div img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
         border-radius: 10px;
     }
 
@@ -34,14 +47,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
-        background-color: #FFF500;
+        padding: 20px;
+        background-color: #8fec7c;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
     }
 
     header ul{
         list-style: none;
         display: flex;
         gap: 10px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
     }
 
     form {
