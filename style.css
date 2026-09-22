@@ -8,16 +8,18 @@
     body {
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
-    }
+        overflow-x: hidden;
+        }
     #main {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(minmax(200px, 1fr), minmax(200px, 1fr)); 
+        gap: 16px;
         gap: 10px;
         overflow-x: auto;
         padding: 20px;
-        width: 100vw;
+        width: 100%;
         height: auto;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     .card {
         display: flex;
@@ -25,7 +27,8 @@
         justify-content: space-between;
         background-color: rgb(225, 225, 225);
         padding: 30px;
-        width: 300px;
+        width: ;
+        flex: 1;
         transition: 0.5s ease;
         border-radius: 10px;
     }
@@ -39,9 +42,8 @@
 
     #main div:hover {
         transition: 0.5s ease;
-        transform: scale(1.05);
-        margin-left: 10px;
-        margin-right: 10px;
+        transform: scale(1.025);
+    
     }
     header {
         display: flex;
@@ -53,6 +55,8 @@
         margin-left: 20px;
         margin-right: 20px;
         border-radius: 10px;
+        left: 0;
+        top: 0;
     }
 
     header ul{
