@@ -1,6 +1,6 @@
 const mainDiv = document.getElementById('main');
 const form = document.getElementById('form');
-
+//array de produtos, primeiro é a imag
 const products = [
     ['assets/S26.png', 'Smartphone S26', 'Smartphone GALAXY S26 ULTRA', 'smartphone', '1000,00'],
     ['assets/S25.webp', 'Smartphone S25', 'Smartphone GALAXY S25 ULTRA', 'smartphone', '900,00'],
